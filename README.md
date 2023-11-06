@@ -2,7 +2,7 @@
 
 - [x] This portfolio website has both dark and light.
        
-| <img src='https://raw.githubusercontent.com/5alafawyyy/My-Portfolio/main/dark.png' width='500'>|<img src='https://raw.githubusercontent.com/5alafawyyy/My-Portfolio/main/light.png' width='500'> |
+| <img src='assets/screenshots/dark.png' width='500'>|<img src='assets/screenshots//light.png' width='500'> |
 |:---:|--------|
 
 - [x] Works on all desktops, tablets and mobiles
