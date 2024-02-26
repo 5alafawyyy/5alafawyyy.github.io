@@ -12,7 +12,7 @@ const String twitter = 'https://twitter.com/Ahmed__Khallaf';
 const String youtube =
     'https://www.youtube.com/channel/UCX83L65Wf9xy3YswdQYhRjg';
 // Github Link
-const String linkedin = 'https://www.linkedin.com/in/ahmed-khallaf-a4151213a/';
+const String linkedin = 'https://www.linkedin.com/in/ahmedkhallaf98';
 // Github Link
 const String buymeacoffee = 'https://www.buymeacoffee.com/5alafawy';
 // Github Link
