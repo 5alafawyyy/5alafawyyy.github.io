@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSro Account Deletion Request</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        .form-container {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+        }
+        .checkbox-label input {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0052a3;
+        }
+        .notice {
+            background: #fff8e1;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>PSro Account Deletion Request</h1>
+    <p>To permanently delete your PSro account and associated data, please complete this form.</p>
+    
+    <div class="notice">
+        <strong>What will be deleted:</strong>
+        <ul>
+            <li>Your account username and profile information</li>
+            <li>Your email address</li>
+            <li>App usage data</li>
+        </ul>
+        <strong>What we retain (for legal compliance):</strong>
+        <ul>
+            <li>Transaction records of purchases (without personal identifiers)</li>
+            <li>Data required by law (e.g., tax records)</li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <form action="mailto:farshotygames@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="user_identifier">Email or Username:</label>
+                <input type="text" id="user_identifier" name="user_identifier" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    <span>
+                        I understand this action is irreversible. All my personal data will be permanently 
+                        deleted from PSro's servers, except where retention is required by law.
+                    </span>
+                </label>
+            </div>
+            
+            <button type="submit">Submit Deletion Request</button>
+        </form>
+    </div>
+
+    <p><strong>Processing Time:</strong> We will process your request within 5-7 business days and send a confirmation email.</p>
+    <p><strong>Need help?</strong> Contact us at <a href="mailto:farshotygames@gmail.com">farshotygames@gmail.com</a></p>
+</body>
+</html>
