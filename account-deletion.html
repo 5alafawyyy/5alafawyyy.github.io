@@ -66,6 +66,13 @@
             border-left: 4px solid #ffc107;
             margin: 20px 0;
         }
+        .success-message {
+            display: none;
+            background: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +94,12 @@
     </div>
 
     <div class="form-container">
-        <form action="mailto:farshotygames@gmail.com" method="POST" enctype="text/plain">
+        <form id="deletionForm" action="https://formsubmit.co/farshotygames@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="PSro Account Deletion Request">
+            <input type="hidden" name="_autoresponse" value="We've received your PSro account deletion request. We'll process it within 5 business days.">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://yourusername.github.io/account-deletion-success.html">
+            
             <div class="form-group">
                 <label for="user_identifier">Email or Username:</label>
                 <input type="text" id="user_identifier" name="user_identifier" required>
@@ -95,7 +107,7 @@
             
             <div class="form-group">
                 <label class="checkbox-label">
-                    <input type="checkbox" required>
+                    <input type="checkbox" id="confirmation" required>
                     <span>
                         I understand this action is irreversible. All my personal data will be permanently 
                         deleted from PSro's servers, except where retention is required by law.
@@ -107,7 +119,14 @@
         </form>
     </div>
 
-    <p><strong>Processing Time:</strong> We will process your request within 5-7 business days and send a confirmation email.</p>
+    <p><strong>Processing Time:</strong> We will process your request within 5-7 business days.</p>
     <p><strong>Need help?</strong> Contact us at <a href="mailto:farshotygames@gmail.com">farshotygames@gmail.com</a></p>
+
+    <script>
+        // Optional: Form submission feedback
+        document.getElementById('deletionForm').addEventListener('submit', function() {
+            localStorage.setItem('submissionTime', new Date().toISOString());
+        });
+    </script>
 </body>
 </html>
